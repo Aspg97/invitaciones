@@ -11,6 +11,10 @@ p{
     text-align: center;
 }
 
-.img-invitacion{
+.contenedor-imagen{
     width: 100%;
+    background-color: aqua;
+}
+
+.img-invitacion{
 }
