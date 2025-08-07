@@ -32,6 +32,6 @@ a-scene {
     width: 100vh;
 }
 
-.contenedor-imagen{
+.contenedor-imagen img{
     object-fit: contain;
 }
