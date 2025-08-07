@@ -9,25 +9,23 @@
     <title>Document</title>
   </head>
   <body>
-    <a-scene arjs>
-      <a-marker preset="hiro">
-        <a-entity position="0 0 0" scale="0.1 0.1 0.1">
+    <div class="contenedor-ar">
+      <a-scene embedded arjs>
+        <a-marker preset="hiro">
+          <a-entity position="0 0 0" scale="0.1 0.1 0.1">
+            <a-entity
+              position=""
+              scale="1"
+              gltf-model="https://raw.githubusercontent.com/pedrovelasquez9/ARJS-example/main/tie.glb"
+            ></a-entity>
+          </a-entity>
           <!--
-          
-              -->
-          <a-entity
-            position=""
-            scale="1"
-            gltf-model="https://raw.githubusercontent.com/pedrovelasquez9/ARJS-example/main/tie.glb"
-          ></a-entity>
-        </a-entity>
-        <!--
           <a-entity position="0 0 0" rotation="0 0 0" scale="0.60 0.60 0.60" gltf-model="#fornite" animation-mixer="clip: Emote AfroHouse"></a-entity>
-        
         -->
-      </a-marker>
-      <a-entity camera position="0 0 0"></a-entity>
-    </a-scene>
+        </a-marker>
+        <a-entity camera position="0 0 0"></a-entity>
+      </a-scene>
+    </div>
     <p>invitación prueba 1</p>
     <div class="contenedor-imagen">
       <img

@@ -11,6 +11,21 @@ p{
     text-align: center;
 }
 
+.contenedor-ar{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+
+a-scene {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+
+}
 .contenedor-imagen{
     width: 100%;
 }
