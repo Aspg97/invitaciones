@@ -14,6 +14,7 @@ p{
 .contenedor-ar{
     position: relative;
     height: 80vh;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -29,4 +30,5 @@ a-scene {
 
 .contenedor-imagen{
     width: 100%;
+    object-fit: contain;
 }
