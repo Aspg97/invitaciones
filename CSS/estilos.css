@@ -11,9 +11,10 @@ p{
     text-align: center;
 }
 
-.contenedor-ar{
+#contenedor-ar{
     position: relative;
     height: 80vh;
+    width: 50vh;
     overflow: hidden;
 }
 
