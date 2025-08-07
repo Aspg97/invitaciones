@@ -34,4 +34,5 @@ a-scene {
 
 .contenedor-imagen img{
     object-fit: contain;
+    width: 100%;
 }
