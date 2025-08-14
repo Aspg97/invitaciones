@@ -11,10 +11,12 @@
   </head>
   <body>
     <div id="contenedor-ar">
-      <a-scene embedded arjs>
+      <a-scene embedded arjs vr-mode-ui="enabled: false" resize="false">
         <a-marker preset="hiro">
           <a-entity position="0 0 0" scale="0.1 0.1 0.1">
             <a-entity
+              position=""
+              scale="1"
               gltf-model="https://raw.githubusercontent.com/pedrovelasquez9/ARJS-example/main/tie.glb"
             ></a-entity>
           </a-entity>
