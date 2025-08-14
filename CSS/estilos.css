@@ -18,7 +18,7 @@ p{
 }
 
 
-#contenedor-ar{
+/*#contenedor-ar{
     position: relative;
     height: 80vh;
     width: 100%;
@@ -34,7 +34,7 @@ a-scene {
     height: 100% !important;
 
 }
-
+*/
 .contenedor-imagen{
     width: 100%;
 }
