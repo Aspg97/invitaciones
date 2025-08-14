@@ -11,10 +11,14 @@ p{
     text-align: center;
 }
 
+body{
+    width: 100vh !important;
+}
+
 #contenedor-ar{
     position: relative;
     height: 80vh;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
 }
 
