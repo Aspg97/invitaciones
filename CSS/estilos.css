@@ -6,9 +6,9 @@
 }
 
 body {
-    width: 100% !important;
+    max-width: 100vh !important;
     margin: 0 !important;
-    height: auto !important;
+    max-height: 200vh !important;
 }
 
 p{
@@ -26,15 +26,12 @@ p{
 }
 
 
-#contenedor-ar a-scene {
+#contenedor-ar a-scene,a-scene canvas {
     width: 100% !important;
     height: 100% !important;
-    position: relative !important;
-}
-
-a-scene canvas{
-    width: 100% !important;
-    height: 100% !important;
+    top: 0;
+    left: 0;
+    position: absolute !important;
     object-fit: cover;
 }
 
