@@ -40,6 +40,15 @@ a-scene canvas {
     object-fit: cover;
 }
 
+model-viewer {
+      width: 100%;
+      max-width: 500px;
+      height: 400px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
 .contenedor-imagen{
     width: 100%;
 }
