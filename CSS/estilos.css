@@ -1,3 +1,6 @@
+    :root { --vh: 1vh; }
+    html, body { margin:0; padding:0; }
+
 *{
     border: none;
     box-sizing: border-box;
@@ -6,9 +9,10 @@
 }
 
 body {
-    max-width: 100vh !important;
+    /*max-width: 100vh !important;
     margin: 0 !important;
-    max-height: 200vh !important;
+    max-height: 200vh !important;*/
+    touch-action: manipulation;
 }
 
 p{
@@ -19,14 +23,15 @@ p{
 
 
 #contenedor-ar{
-    height: 50vh;
+    height: calc(var(--vh) * 40);
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 
-#contenedor-ar a-scene,a-scene canvas {
+a-scene,
+a-scene canvas {
     width: 100% !important;
     height: 100% !important;
     top: 0;
