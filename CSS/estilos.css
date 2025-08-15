@@ -8,13 +8,6 @@
     padding: 0;
 }
 
-body {
-    /*max-width: 100vh !important;
-    margin: 0 !important;
-    max-height: 200vh !important;*/
-    touch-action: manipulation;
-}
-
 p{
     width: 100%;
     color: brown;
@@ -23,30 +16,20 @@ p{
 
 
 #contenedor-ar{
-    height: calc(var(--vh) * 40);
+    height: 40vh;
     width: 100%;
-    overflow: hidden;
-    position: relative;
+    background: transparent;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
-
-a-scene,
-a-scene canvas {
-    width: 100% !important;
-    height: 100% !important;
-    top: 0;
-    left: 0;
-    position: absolute !important;
-    object-fit: cover;
-}
 
 model-viewer {
       width: 100%;
       max-width: 500px;
       height: 400px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      background: transparent;
     }
 
 .contenedor-imagen{
