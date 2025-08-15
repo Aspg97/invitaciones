@@ -15,12 +15,49 @@
     camera-controls
     auto-rotate
     shadow-intensity="0"
-    preload="auto">
+    preload="auto"
+    exposure="1"
+    interaction-prompt="none"
+    loading="lazy">
+    
+    
   </model-viewer>
     </div>
     <p>invitación prueba 1</p>
     <div class="contenedor-imagen">
       <img class="Img-invitacion" src="../IMG/pruebaInvitacion.png" alt="" />
     </div>
+
+    <script>
+  const modelViewer = document.querySelector('#modelo3d');
+
+  // Función para reemplazar el modelo ligero por el completo
+  function cargarModeloCompleto() {
+    const modeloCompleto = 'https://raw.githubusercontent.com/Aspg97/invitaciones/master/IMG/prueba.glb';
+    
+    // Creamos un nuevo elemento para la transición
+    const nuevoModelo = document.createElement('model-viewer');
+    nuevoModelo.src = modeloCompleto;
+    nuevoModelo.alt = "Modelo 3D completo";
+    nuevoModelo.cameraControls = true;
+    nuevoModelo.autoRotate = true;
+    nuevoModelo.shadowIntensity = 0;
+    nuevoModelo.preload = "auto";
+    nuevoModelo.loading = "lazy";
+    nuevoModelo.interactionPrompt = "none";
+    nuevoModelo.style.width = "100%";
+    nuevoModelo.style.height = "100%";
+    nuevoModelo.style.background = "transparent";
+
+    // Reemplaza el modelo anterior cuando el nuevo esté cargado
+    nuevoModelo.addEventListener('load', () => {
+      const contenedor = document.querySelector('#modelo-3d-container');
+      contenedor.replaceChild(nuevoModelo, modelViewer);
+    });
+  }
+
+  // Carga el modelo completo después de unos segundos o cuando quieras
+  setTimeout(cargarModeloCompleto, 1500); // Ajusta tiempo según tu necesidad
+</script>
   </body>
 </html>
