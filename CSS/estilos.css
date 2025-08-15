@@ -29,7 +29,7 @@ model-viewer {
       width: 100%;
       max-width: 500px;
       height: 400px;
-      background: transparent;
+      background: linear-gradient(to bottom, #87CEFA, #ffffff);;
     }
 
 .contenedor-imagen{
