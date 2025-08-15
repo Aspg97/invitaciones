@@ -27,5 +27,25 @@
     <div class="contenedor-imagen">
       <img class="Img-invitacion" src="../IMG/pruebaInvitacion.png" alt="" />
     </div>
+    <script>
+    // Evita que A-Frame ajuste el tamaño automáticamente
+    window.addEventListener('resize', function (e) {
+      e.stopImmediatePropagation();
+    }, true);
+
+    // Fuerza el tamaño correcto del canvas después de cada cambio
+    const fixARSize = () => {
+      const scene = document.querySelector('a-scene');
+      const canvas = scene?.canvas;
+      if (canvas) {
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.objectFit = "cover";
+      }
+    };
+
+    window.addEventListener('resize', fixARSize);
+    window.addEventListener('load', fixARSize);
+  </script>
   </body>
 </html>
