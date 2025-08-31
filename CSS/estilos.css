@@ -19,17 +19,18 @@ p{
     height: 40vh;
     width: 100%;
     background: transparent;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 model-viewer {
       width: 100%;
       max-width: 500px;
       height: 400px;
-      background: linear-gradient(to bottom, #87CEFA, #ffffff);;
+      background: linear-gradient(to bottom, #dde3e8, #ffffff);;
     }
 
 .contenedor-imagen{
