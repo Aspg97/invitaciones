@@ -8,7 +8,39 @@
     padding: 0;
 }
 
+.pantalla-ini{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../IMG/fondoPantallaIni.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    animation: desaparecer 4s ease-in-out forwards;
+}
+
+@keyframes desaparecer {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 0.5;}
+    100% {opacity: 0; visibility: hidden;}    
+}
+
+span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: brown;
+}
+
 p{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 2rem;
     width: 100%;
     color: brown;
     text-align: center;
