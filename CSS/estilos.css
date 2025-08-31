@@ -46,6 +46,73 @@ p{
     text-align: center;
 }
 
+.cont-cortina{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+
+}
+
+.lat-izq, .lat-der{
+    height: 100%;
+    width: 50%;
+}
+
+.lat-izq{
+    background-image: url('../IMG/fondoPapel-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 0 5px #888;
+    z-index: 3;
+}
+
+.lat-der{
+    background-image: url('../IMG/fondoPapel-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lazo{
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    height: 200px;
+    background-image: url('../IMG/lazo-03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 4;
+}
+
+.deslizar-lazo{
+    animation: deslizarLazo 2s ease-in-out forwards;
+}
+
+@keyframes deslizarLazo {
+    0% {transform: translateX(0);}
+    75% {opacity: 1;;}
+    90% {opacity: 0.5;}
+    100% {transform: translateY(50vh); visibility: hidden; opacity: 0;}    
+}
+
+.cont-btn{
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+button{
+    background: none;
+}
 
 #contenedor-ar{
     height: 40vh;
