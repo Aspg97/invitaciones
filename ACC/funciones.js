@@ -34,7 +34,15 @@ const btn = document.querySelector('.btn-abrir');
 const latIzq = document.querySelector('.lat-izq');
 const latDer = document.querySelector('.lat-der');
 const lazo = document.querySelector('.lazo');
+const cortina = document.querySelector('.cont-cortina');
+const contBtn = document.querySelector('.cont-btn');
+const video = document.querySelector('.contenedor-video');
 
 btn.addEventListener('click', () => {
     lazo.classList.add('deslizar-lazo');
+    latIzq.classList.add('deslizar-izq');
+    latDer.classList.add('deslizar-der');
+    cortina.classList.add('desaparecer-cortina');
+    contBtn.classList.add('desaparecer-btn');
+    video.removeAttribute('hidden');
 });

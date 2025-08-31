@@ -20,13 +20,11 @@
     align-items: center;
     position: absolute;
     z-index: 5;
-    animation: desaparecer 4s ease-in-out forwards;
+    animation: desaparecer 3s ease-in-out forwards;
 }
 
 @keyframes desaparecer {
-    0% {opacity: 1;}
-    50% {opacity: 1;}
-    75% {opacity: 0.5;}
+    0%, 75% {opacity: 1;}
     100% {opacity: 0; visibility: hidden;}    
 }
 
@@ -52,7 +50,16 @@ p{
     position: absolute;
     z-index: 4;
     display: flex;
+}
 
+.desaparecer-cortina{
+    animation: quitarCortina 6s ease-in-out forwards;
+}
+
+@keyframes quitarCortina {
+    99% {visibility: visible;}
+    100% {visibility: hidden;}
+    
 }
 
 .lat-izq, .lat-der{
@@ -76,6 +83,26 @@ p{
     background-position: center;
 }
 
+.deslizar-der{
+    animation: abrirLatDer 6s ease-in-out forwards;
+}
+
+.deslizar-izq{
+    animation: abrirLatIz 6s ease-in-out forwards;
+}
+
+@keyframes abrirLatDer {
+    0% {transform:  translateY(0); border-radius: 0;}
+    30% {border-radius: 25vh 25vh 0 0;}
+    100% {transform:  translateY(100vh); border-radius: 25vh 25vh 0 0;}
+}
+
+@keyframes abrirLatIz {
+    0% {transform:  translateY(0); border-radius: 0;}
+    30% {border-radius: 0 0 25vh 25vh;}
+    100% {transform:  translateY(-100vh); border-radius: 0 0 25vh 25vh;}
+}
+
 .lazo{
     position: absolute;
     top: 30vh;
@@ -93,10 +120,8 @@ p{
 }
 
 @keyframes deslizarLazo {
-    0% {transform: translateX(0);}
-    75% {opacity: 1;;}
-    90% {opacity: 0.5;}
-    100% {transform: translateY(50vh); visibility: hidden; opacity: 0;}    
+    from {opacity: 1;}
+    to {opacity: 0;}    
 }
 
 .cont-btn{
@@ -108,6 +133,16 @@ p{
     justify-content: center;
     align-items: center;
     z-index: 4;
+}
+
+.desaparecer-btn{
+    animation: desaparecerBtn 1s ease-in-out forwards;
+}
+
+@keyframes desaparecerBtn {
+    from {opacity: 1;}
+    to {opacity: 0;}
+    
 }
 
 button{
@@ -132,12 +167,11 @@ model-viewer {
       background: linear-gradient(to bottom, #dde3e8, #ffffff);;
     }
 
-.contenedor-imagen{
+.contenedor-video{
     width: 100%;
 }
 
-.contenedor-imagen img{
+.contenedor-video img{
     object-fit: contain;
     width: 100%;
-    height: 100%;
 }
