@@ -37,7 +37,7 @@ const lazo = document.querySelector('.lazo');
 const cortina = document.querySelector('.cont-cortina');
 const contBtn = document.querySelector('.cont-btn');
 const video = document.querySelector('.contenedor-video');
-const audio = document.getElementById('audioMusic');
+const audioM = document.getElementById('audioMusic');
 
 btn.addEventListener('click', () => {
     lazo.classList.add('deslizar-lazo');
@@ -46,5 +46,5 @@ btn.addEventListener('click', () => {
     cortina.classList.add('desaparecer-cortina');
     contBtn.classList.add('desaparecer-btn');
     video.removeAttribute('hidden');
-audio.play();
+audioM.play();
 });
