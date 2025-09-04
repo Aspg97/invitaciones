@@ -5,55 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../CSS/estilos.css" />
     <title>Sr. Edwin Gallegos y flia.</title>
-     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <audio id="audioMusic" loop>
-      <source src="../IMG/seraPorqueTeAmo.mp3" type="audio/mpeg" />
-    </audio>
-<div class="pantalla-ini">
-  <div class="cont-texto">
-    <p><span>Con especial cariño para:</span> <br> Sr. Edwin Gallegos y flia.</p>
-  </div>
-</div>
-
-
-<div class="cont-cortina">
-  <div class="lazo"></div>
-  <div class="lat-izq"></div>
-  <div class="lat-der"></div>
-  <div class="cont-btn"><button class="btn-abrir"><img src="../IMG/Abrir_Mesa de trabajo 1.png" alt="" width="80px"></button></div>
-</div>
-
-    <div id="contenedor-ar">
-      <model-viewer 
-      src="https://raw.githubusercontent.com/Aspg97/invitaciones/master/IMG/prueba.glb"
-      alt="Modelo 3D"
-      camera-controls
-      auto-rotate
-      shadow-intensity="0"
-      preload="auto"
-      exposure="1"
-      interaction-prompt="none"
-      loading="lazy">
-      </model-viewer>
-    </div> 
-    <p class="nombre-invitado">Sr. Edwin Gallegos y flia.</p>
-    <div class="contenedor-video" hidden>
-      <video width="100%" controls loop>
-        <source src="../IMG/invitacion.mp4" type="video/mp4" />
-      </video>
-      <div class="cont-link">
-          <p class="leyenda">Confirma el número de asistentes en el siguiente link:</p>
-        <div>
-        </div>
+    <audio id="audioMusic" loop></audio>
+    <div class="pantalla-ini">
+      <div class="cont-texto">
+        <p>
+          <span id="txtSaludo"></span><br> Sr. Edwin Gallegos y flia.
+        </p>
       </div>
     </div>
-
+    <div class="cont-cortina" id="cortina"></div>
+    <div id="contenedor-ar"></div> 
+    <p class="nombre-invitado">Sr. Edwin Gallegos y flia.</p>
+    <div class="contenedor-video" id="video" hidden></div>
+    <div class="pie-pagina">
+      <div class="cont-link" id="linkConfirmacion"></div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOPmO1oN8fRiqR8U_UH3EpFLjTHQkcvxwqrNOft_1XgWy-Dg/viewform?usp=pp_url&entry.1530279581=Edwin+Gallegos+y+Familia+(max.+6)">Aquí</a>
+    </div>
+    <script src="../ACC/contenidos.js"></script>
     <script src="../ACC/funciones.js"></script>
   </body>
 </html>

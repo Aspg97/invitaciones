@@ -48,3 +48,13 @@ btn.addEventListener('click', () => {
     video.removeAttribute('hidden');
 audioM.play();
 });
+
+//Funcion pista audio
+//const audioM = document.getElementById('audioMusic');
+function pistaAudio (rutaPista){
+  let cod = `
+    <source src=${rutaPista} type="audio/mpeg" />
+  `;
+  return cod;
+}
+audioM.innerHTML = pistaAudio('../IMG/seraPorqueTeAmo.mp3');
