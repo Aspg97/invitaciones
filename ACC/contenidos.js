@@ -17,7 +17,7 @@ function contenidoCortina (rutaImagenBtn){
   `;
   return contenido;
 }
-cortinaV.innerHTML = contenidoCortina('../IMG/imgBtnAbrir.png');
+cortinaV.innerHTML = contenidoCortina('../../IMG/imgBtnAbrir.png');
 
 //Funcion modelo 3D
 const contenedorModelo = document.getElementById('contenedor-ar');
@@ -49,7 +49,7 @@ function cVideo (rutaVideo){
  `;
  return contenido;
 }
-contVideo.innerHTML = cVideo('../IMG/invitacion.mp4');
+contVideo.innerHTML = cVideo('../../IMG/invitacion.mp4');
 
 //Funcion contenido link
 const contLink = document.getElementById('linkConfirmacion');

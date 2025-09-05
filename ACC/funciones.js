@@ -57,4 +57,4 @@ function pistaAudio (rutaPista){
   `;
   return cod;
 }
-audioM.innerHTML = pistaAudio('../IMG/seraPorqueTeAmo.mp3');
+audioM.innerHTML = pistaAudio('../../IMG/seraPorqueTeAmo.mp3');
